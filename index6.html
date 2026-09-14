@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palmeiras - História e Paixão</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f2f5f3;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #006437, #008f4c);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #004d2a;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a8e6c1;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #006437;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #006437;
+            margin-bottom: 10px;
+        }
+
+        /* HISTÓRIA */
+
+        .historia {
+            background-color: white;
+            padding: 30px;
+            border-left: 6px solid #006437;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .historia p {
+            margin-bottom: 15px;
+        }
+
+        /* TÍTULOS */
+
+        .titulo {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #008f4c;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .titulo h3 {
+            color: #006437;
+            margin-bottom: 10px;
+        }
+
+        /* PROJETO */
+
+        .projeto {
+            background: linear-gradient(135deg, #003d22, #006437);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: white;
+            color: #006437;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #a8e6c1;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #003d22;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>💚 Palmeiras</h1>
+
+        <p>Sociedade Esportiva Palmeiras</p>
+
+        <p>
+            História, títulos, ídolos e paixão pelo Verdão.
+        </p>
+
+    </header>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#historia">História</a>
+
+        <a href="#titulos">Títulos</a>
+
+        <a href="#idolos">Ídolos</a>
+
+        <a href="#estadio">Estádio</a>
+
+    </nav>
+
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="358609843-escudo-do-palmeiras-6.webp"
+                alt="Futebol"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>💚 Bem-vindo ao Palmeiras!</h2>
+
+                <p>
+                    O <strong>Palmeiras</strong> é um dos clubes mais
+                    tradicionais e vitoriosos do futebol brasileiro.
+                </p>
+
+                <br>
+
+                <p>
+                    Fundado em 26 de agosto de 1914 como Palestra Italia,
+                    o clube construiu uma história marcada por grandes
+                    jogadores, títulos e momentos inesquecíveis.
+                </p>
+
+                <br>
+
+                <p>
+                    🟢 Verde + ⚪ Branco = 💚 Verdão
+                </p>
+
+                <br>
+
+                <p>
+                    Neste site você vai conhecer um pouco mais sobre
+                    a história, os títulos, os ídolos e a casa do
+                    Palmeiras.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTÓRIA -->
+
+    <section id="historia">
+
+        <h2>📖 História do Palmeiras</h2>
+
+        <div class="historia">
+
+            <p>
+                A Sociedade Esportiva Palmeiras foi fundada em
+                <strong>26 de agosto de 1914</strong>, na cidade de
+                São Paulo, por imigrantes italianos.
+            </p>
+
+            <p>
+                Originalmente, o clube recebeu o nome de
+                <strong>Palestra Italia</strong>. Em 1942, durante
+                a Segunda Guerra Mundial, o clube passou a se chamar
+                Sociedade Esportiva Palmeiras.
+            </p>
+
+            <p>
+                Ao longo de sua história, o Palmeiras conquistou
+                diversos títulos nacionais e internacionais e se
+                tornou uma das maiores equipes do futebol brasileiro.
+            </p>
+
+            <p>
+                A torcida palmeirense é conhecida pela paixão pelo
+                clube e pelo apelido de <strong>Verdão</strong>.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- TÍTULOS -->
+
+    <section id="titulos">
+
+        <h2>🏆 Principais Títulos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>🏆 Libertadores</h3>
+
+                <p>
+                    O Palmeiras conquistou a Copa Libertadores
+                    da América em diferentes momentos de sua história,
+                    incluindo os títulos de 1999, 2020 e 2021.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🇧🇷 Brasileirão</h3>
+
+                <p>
+                    O Verdão possui uma das histórias mais vitoriosas
+                    no Campeonato Brasileiro.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🏆 Copa do Brasil</h3>
+
+                <p>
+                    O Palmeiras também conquistou a Copa do Brasil
+                    em diferentes gerações.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌎 Mundial</h3>
+
+                <p>
+                    O clube possui uma importante história em
+                    competições internacionais e mundiais.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ÍDOLOS -->
+
+    <section id="idolos">
+
+        <h2>⭐ Ídolos do Palmeiras</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>⭐ Ademir da Guia</h3>
+
+                <p>
+                    Conhecido como "Divino", Ademir da Guia é um
+                    dos maiores jogadores da história do Palmeiras.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>⭐ Marcos</h3>
+
+                <p>
+                    O goleiro Marcos se tornou um dos maiores ídolos
+                    da história do clube e ficou conhecido como
+                    "São Marcos".
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>⭐ Evair</h3>
+
+                <p>
+                    Atacante importante na conquista da Libertadores
+                    de 1999, Evair marcou época com a camisa verde.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>⭐ Dudu</h3>
+
+                <p>
+                    Dudu se tornou um dos principais jogadores do
+                    Palmeiras na era recente do clube.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ESTÁDIO -->
+
+    <section id="estadio">
+
+        <h2>🏟️ Nubank Parque</h2>
+
+        <div class="historia">
+
+            <p>
+                O <strong>Nubank Parque</strong> é a casa do Palmeiras
+                e está localizado na cidade de São Paulo.
+            </p>
+
+            <p>
+                O estádio moderno recebe partidas de futebol,
+                shows e grandes eventos.
+            </p>
+
+            <p>
+                A arena se tornou um dos principais símbolos da
+                fase moderna do Palmeiras e proporciona uma grande
+                experiência para os torcedores.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURIOSIDADES -->
+
+    <section>
+
+        <h2>🤔 Curiosidades</h2>
+
+        <div class="titulo">
+
+            <h3>🟢 Por que Verdão?</h3>
+
+            <p>
+                O Palmeiras é tradicionalmente conhecido como
+                Verdão por causa da sua camisa verde.
+            </p>
+
+        </div>
+
+
+        <div class="titulo">
+
+            <h3>🇮🇹 Origem italiana</h3>
+
+            <p>
+                O clube foi fundado por imigrantes italianos e
+                originalmente se chamava Palestra Italia.
+            </p>
+
+        </div>
+
+
+        <div class="titulo">
+
+            <h3>🐷 O mascote</h3>
+
+            <p>
+                O porco se tornou um dos principais símbolos
+                associados à torcida palmeirense.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJETO -->
+
+    <section>
+
+        <div class="projeto">
+
+            <h2>💚 Avanti, Palestra!</h2>
+
+            <p>
+                O Palmeiras possui uma história centenária,
+                marcada por grandes jogadores, títulos e
+                uma torcida apaixonada.
+            </p>
+
+            <br>
+
+            <p>
+                🟢 Sociedade Esportiva Palmeiras
+                <br>
+                🏆 Um dos maiores clubes do Brasil
+                <br>
+                💚 Orgulho da torcida palmeirense
+                <br>
+                🏟️ Allianz Parque
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            💚 Palmeiras - Sociedade Esportiva Palmeiras
+        </p>
+
+        <p>
+            Avanti Palestra! 🏆
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto Educacional
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
